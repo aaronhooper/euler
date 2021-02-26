@@ -1,3 +1,4 @@
+// TODO: rewrite without arrays/sets/reduce
 let multiplesOfThree = []
 let multiplesOfFive = []
 

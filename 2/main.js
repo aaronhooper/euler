@@ -1,3 +1,4 @@
+// TODO: rewrite without arrays/reduce
 const LIMIT = 4000000
 let fibonacci = [1, 2]
 let limitReached = false
