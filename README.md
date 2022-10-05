@@ -15,11 +15,11 @@
 10. [Summation of primes](summation_of_primes)
 11. [Largest product in a grid](largest_product_in_a_grid)
 12. [Highly divisible triangular number](highly_divisible_triangular_number)
+13. [Large sum](large_sum)
 
 
 ## ❓ Unsolved
 
-13. Large sum
 14. Longest Collatz sequence
 15. Lattice paths
 16. Power digit sum
