@@ -1,6 +1,6 @@
 # Project Euler solutions
 
-## Solved
+## ✔️ Solved
 
 1. [Multiples of 3 or 5](multiples_of_3_or_5)
 2. [Even Fibonacci numbers](even_fibonacci_numbers)
