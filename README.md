@@ -16,11 +16,11 @@
 11. [Largest product in a grid](largest_product_in_a_grid)
 12. [Highly divisible triangular number](highly_divisible_triangular_number)
 13. [Large sum](large_sum)
+14. [Longest Collatz sequence](longest_collatz_sequence)
 
 
 ## ❓ Unsolved
 
-14. Longest Collatz sequence
 15. Lattice paths
 16. Power digit sum
 17. Number letter counts
