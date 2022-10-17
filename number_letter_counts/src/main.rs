@@ -61,6 +61,16 @@ mod tests {
             assert_eq!(to_words(1000), "one thousand");
         }
     }
+
+    mod test_letter_count {
+        use crate::letter_count;
+
+        #[test]
+        fn returns_correct_lengths() {
+            assert_eq!(letter_count(342), 23);
+            assert_eq!(letter_count(115), 20);
+        }
+    }
 }
 
 const NUMBER_WORDS: [&str; 30] = [
@@ -122,6 +132,20 @@ fn to_words(n: u32) -> String {
     }
 
     words.join(" ")
+}
+
+fn letter_count(n: u32) -> u32 {
+    let count_chars = |acc, c| -> u32 {
+        if c != '-' && c != ' ' {
+            acc + 1
+        } else {
+            acc
+        }
+    };
+
+    to_words(n)
+        .chars()
+        .fold(0, count_chars)
 }
 
 fn main() {
