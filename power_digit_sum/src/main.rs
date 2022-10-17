@@ -13,6 +13,15 @@ mod tests {
             assert_eq!(multiply(&n2, multiplier), vec![1, 3, 1, 0, 7, 2]);
         }
     }
+
+    mod power_digit_sum {
+        use crate::power_digit_sum;
+
+        #[test]
+        fn returns_correct_result() {
+            assert_eq!(power_digit_sum(15), 26);
+        }
+    }
 }
 
 fn multiply(n: &[u8], multiplier: u8) -> Vec<u8> {
@@ -31,6 +40,16 @@ fn multiply(n: &[u8], multiplier: u8) -> Vec<u8> {
     }
 
     result.iter().rev().map(|&d| d).collect()
+}
+
+fn power_digit_sum(power: u32) -> u32 {
+    let mut total: Vec<u8> = vec![1];
+
+    for _ in 0..power {
+        total = multiply(&total, 2);
+    }
+
+    total.iter().map(|&d| d as u32).sum()
 }
 
 fn main() {
