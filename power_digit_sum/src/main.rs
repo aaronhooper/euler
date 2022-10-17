@@ -53,4 +53,5 @@ fn power_digit_sum(power: u32) -> u32 {
 }
 
 fn main() {
+    println!("{}", power_digit_sum(1000));
 }
