@@ -17,13 +17,13 @@
 12. [Highly divisible triangular number](highly_divisible_triangular_number)
 13. [Large sum](large_sum)
 14. [Longest Collatz sequence](longest_collatz_sequence)
+17. [Number letter counts](number_letter_counts)
 
 
 ## ❓ Unsolved
 
 15. Lattice paths
 16. Power digit sum
-17. Number letter counts
 18. Maximum path sum I
 19. Counting Sundays
 20. Factorial digit sum
