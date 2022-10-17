@@ -149,4 +149,6 @@ fn letter_count(n: u32) -> u32 {
 }
 
 fn main() {
+    let total_n_chars: u32 = (1..=1000).map(|n| letter_count(n)).sum();
+    println!("{}", total_n_chars);
 }
