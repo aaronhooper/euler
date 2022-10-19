@@ -9,19 +9,8 @@ mod tests {
     }
 }
 
-fn factorial(n: u64) -> u64 {
-    if n == 0 {
-        return 1;
-    }
-
-    n * factorial(n - 1)
-}
-
 fn lattice_paths(width: u64) -> u64 {
-    let n = width * 2;
-    let k = width;
-
-    factorial(n) / (factorial(k) * factorial(n - k))
+    (1..=width).fold(1, |acc, n| acc * (width + n) / n)
 }
 
 fn main() {
