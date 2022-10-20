@@ -32,6 +32,15 @@ mod tests {
             assert_eq!(multiply(&n2, &multiplier2), vec![2, 1, 9, 8, 8]);
         }
     }
+
+    mod factorial {
+        use crate::factorial;
+
+        #[test]
+        fn returns_correct_result() {
+            assert_eq!(factorial(&[5]), vec![1, 2, 0]);
+        }
+    }
 }
 
 fn add(n: &[u8], addend: &[u8]) -> Vec<u8> {
@@ -116,6 +125,23 @@ fn multiply(n: &[u8], multiplier: &[u8]) -> Vec<u8> {
         .into_iter()
         .reduce(|acc, summand| add(&acc, &summand))
         .unwrap()
+}
+
+fn factorial(n: &[u8]) -> Vec<u8> {
+    let mut i = vec![0];
+    let mut acc = vec![1];
+
+    loop {
+        if &i == n {
+            break;
+        }
+
+        let i_plus_1 = add(&i, &[1]);
+        acc = multiply(&acc, &i_plus_1);
+        i = i_plus_1;
+    }
+
+    acc
 }
 
 fn main() {
