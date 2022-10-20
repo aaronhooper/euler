@@ -41,6 +41,16 @@ mod tests {
             assert_eq!(factorial(&[5]), vec![1, 2, 0]);
         }
     }
+
+    mod factorial_digit_sum {
+        use crate::factorial_digit_sum;
+
+        #[test]
+        fn returns_correct_result() {
+            let n = vec![5];
+            assert_eq!(factorial_digit_sum(&n), 3);
+        }
+    }
 }
 
 fn add(n: &[u8], addend: &[u8]) -> Vec<u8> {
@@ -144,6 +154,14 @@ fn factorial(n: &[u8]) -> Vec<u8> {
     acc
 }
 
+fn factorial_digit_sum(n: &[u8]) -> u64 {
+    factorial(n)
+        .into_iter()
+        .map(|d| d as u64)
+        .reduce(|acc, d| acc + d)
+        .unwrap()
+}
+
 fn main() {
-    println!("{:?}", add(&[5, 8, 6], &[1, 3, 5, 7]));
+    println!("{:?}", factorial_digit_sum(&[1, 0, 0]));
 }
