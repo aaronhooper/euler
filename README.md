@@ -19,14 +19,14 @@
 14\. [Longest Collatz sequence](longest_collatz_sequence)\
 15\. [Lattice paths](lattice_paths)\
 16\. [Power digit sum](power_digit_sum)\
-17\. [Number letter counts](number_letter_counts)
+17\. [Number letter counts](number_letter_counts)\
+20\. [Factorial digit sum](factorial_digit_sum)
 
 
 ## ❓ Unsolved
 
 18\. Maximum path sum I\
 19\. Counting Sundays\
-20\. Factorial digit sum\
 21\. Amicable numbers\
 22\. Names scores\
 23\. Non-abundant sums\
